@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Header() {
     const widthHeight = 16
@@ -12,33 +13,42 @@ export default function Header() {
             />
 
             <div className='header-inner-div'>
-                <Image
-                    src={"/assets/icon-nav-home.svg"}
-                    width={widthHeight}
-                    height={widthHeight}
-                    alt='movie icon'
-                />
+                <Link href={"/"}>
+                    <Image
+                        src={"/assets/icon-nav-home.svg"}
+                        width={widthHeight}
+                        height={widthHeight}
+                        alt='movie icon'
+                    />
+                </Link>
 
-                <Image
-                    src={"/assets/icon-nav-movies.svg"}
-                    width={widthHeight}
-                    height={widthHeight}
-                    alt='movie icon'
-                />
+                <Link href={"/movies"}>
 
-                <Image
-                    src={"/assets/icon-nav-tv-series.svg"}
-                    width={widthHeight}
-                    height={widthHeight}
-                    alt='movie icon'
-                />
+                    <Image
+                        src={"/assets/icon-nav-movies.svg"}
+                        width={widthHeight}
+                        height={widthHeight}
+                        alt='movie icon'
+                    />
+                </Link>
+                <Link href={"/tvseries"}>
 
-                <Image
-                    src={"/assets/icon-nav-bookmark.svg"}
-                    width={widthHeight}
-                    height={widthHeight}
-                    alt='movie icon'
-                />
+                    <Image
+                        src={"/assets/icon-nav-tv-series.svg"}
+                        width={widthHeight}
+                        height={widthHeight}
+                        alt='movie icon'
+                    />
+                </Link>
+
+                <Link href={"/bookmarked"}>
+                    <Image
+                        src={"/assets/icon-nav-bookmark.svg"}
+                        width={widthHeight}
+                        height={widthHeight}
+                        alt='movie icon'
+                    />
+                </Link>
             </div>
 
             <Image
