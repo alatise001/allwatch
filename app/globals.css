@@ -228,16 +228,20 @@ header {
   opacity: 0.4979;
 }
 
-.trending {
-  height: max-content;
+.trending-container {
   display: flex;
-  width: min-content;
   gap: .61rem;
-
 
   overflow: auto;
   scroll-behavior: smooth;
   white-space: nowrap;
+
+}
+
+.trending {
+  /* height: max-content; */
+  /* display: flex; */
+  /* width: min-content; */
 }
 
 .trending-img-div {
@@ -354,7 +358,7 @@ header {
   font-weight: 400;
   line-height: normal;
   opacity: 0.75;
- 
+
 }
 
 .movie-info-div-2-cate {

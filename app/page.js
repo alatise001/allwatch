@@ -17,7 +17,7 @@ export default function Home() {
       <SearchBar />
       <div className='trending-home-div'>
         <h2 className='trending-home-header'>Trending</h2>
-        <div className='trending'>
+        <div className='trending-container'>
           <Trending />
           <Trending />
           <Trending />
